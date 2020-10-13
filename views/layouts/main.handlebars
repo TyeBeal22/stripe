@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="set-cookie X-UA-Compatible" content="ie-edge id=12345; SameSite=Strict">
+    <title>Wright 4 You</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto%7CJosefin+Sans:100,300,400,500" rel="stylesheet" type="text/css">
+    <script src="https://checkout.stripe.com/checkout.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://kit.fontawesome.com/5fbd16b839.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <script src="https://unpkg.com/sweet-scroll/sweet-scroll.min.js"></script>
+  </head>
+
+  <body class="is-preload">
+
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark">
+
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+<li class="nav-item active">
+  <a class="nav-link" href="#" data-scroll>Home<span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#skills" data-scroll>Services</a>
+</li>
+
+<li class="nav-item">
+  <a class="nav-link" href="#skills1" data-scroll>Session</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#main" data-scroll>Gallery</a>
+</li>
+</ul>
+</div>
+<div class="cart-btn" id= "cart-count">
+<span class="nav-icon">
+
+</span>
+
+</div>
+<img class="logos" src="logo.png" alt="logo" style="padding-right: 0; height: 5rem" href="#" data-scroll pointer="true"/>
+</nav>
+
+<! --- nav end ------>
+
+
+<header class="v-header container">
+    <div class="fullscreen-video-wrap" style="margin-top:7rem">
+      <video src="vid.mp4" autoplay="true" loop="true" muted>
+    </video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content text-md-center">
+      <h1>Wright 4 You Training</h1>
+      <p>Be the best player you can be! Learn from trainers that played at the next level. Services include elite skill work, weight training, and conditioning.</p>
+      <a class="btn btn-primary" id="button" href="#skills" data-scroll>Find Out More</a>
+    </div>
+        <div class="modal-content">
+          <div class="close">+</div>
+          <img src="logo.png" alt="" style="height:5rem;width:6rem">
+          <p style="color:#333">Located in the DMV area, we specialize in phyical and skill training.</p>
+        </div>
+
+
+
+    </div>
+  </header>
+
+  <section class="section section-a" id="skills">
+    <div class="container">
+        <h2 style="margin-top:2.5rem;">AboutUs</h2>
+      <p>Lorem ipsum dolor, justsit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus!</p>
+    
+    </div>
+  </section>
+
+  <section class="section section-b">
+    <div class="container" id="skills1">
+      <h2>Services</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, impedit amet minima iste autem cumque et maiores blanditiis doloribus aut dolorum quaerat non est voluptatum, tempore ut dolorem voluptas quod quae accusantium, ex inventore ducimus. Beatae mollitia exercitationem, quam similique, consectetur ratione reprehenderit delectus neque eligendi facere soluta dolor ducimus!</p>
+    </div>
+  </section>
+ <hr />
+  <!-- Top Container -->
+    <div class="wrapper" id="pay">
+  <section class="top-container">
+    <header class="showcase">
+      <p>Make the choice that's</p>
+      <h1>Wright4You</h1>
+
+    </header>
+
+    <div class="top-box top-box-a">
+      <h4>Training</h4>
+      <p class="price">$85/session</p>
+      
+      {{{body}}}
+    </div>
+          <div class="top-box top-box-b">
+            <h4>Group</h4>
+            <p class="price">$199/mo</p>
+            <a href="" class="btn">Buy Now</a>
+          </div>
+
+  </section>
+</div>
+ <hr />
+					<div  id="main">
+						<article class="thumb">
+							<a href="bball.jpg" class="image"><img src="bball.jpg" alt="" /></a>
+							<h2>Magna feugiat lorem</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="Gal3.jpg" class="image"><img src="Gal3.jpg" alt="" /></a>
+							<h2>Nisl adipiscing</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="Gal1.png" class="image"><img src="Gal1.png" alt="" /></a>
+							<h2>Tempus aliquam veroeros</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+						<article class="thumb">
+							<a href="Gal4.jpg" class="image"><img src="Gal4.jpg" alt="" /></a>
+							<h2>Aliquam ipsum sed dolore</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+            	<article class="thumb">
+							<a href="Gal2.jpg" class="image"><img src="Gal2.jpg" alt="" /></a>
+							<h2>Aliquam ipsum sed dolore</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+            <article class="thumb">
+							<a href="Gallery.png" class="image"><img src="Gallery.png" alt="" /></a>
+							<h2>Aliquam ipsum sed dolore</h2>
+							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+						</article>
+
+        </div>
+
+
+  <footer>
+    <p class="bottom"><a href="#" data-scroll style="text-decoration:none"> Wright4You</a><i class="far fa-copyright"></i> <script>document.write(new Date().getFullYear());</script></script></p>
+    </footer>
+
+<script src="vid.js" charset="utf-8"></script>
+		<script src="js/jquery.min.js"></script>
+			<script src="js/jquery.poptrox.min.js"></script>
+			<script src="js/browser.min.js"></script>
+			<script src="js/breakpoints.min.js"></script>
+			<script src="js/util.js"></script>
+			<script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+ 

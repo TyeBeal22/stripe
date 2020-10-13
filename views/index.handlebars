@@ -1,0 +1,26 @@
+
+
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+
+      <form action="/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{stripePublicKey}}"
+          data-amount="10000"
+          data-name="Elite Training"
+          data-description="Wright4You Training"
+          data-image="/Img/marketplace.png"
+          data-locale="auto">
+        </script>
+        <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button id="Pbtn" type="submit" class="btn text-white btn-lg">Purchase $100</button>
+      </form>
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,20 @@
+
+ {
+     "services": [
+    {
+        "id": 1,
+        "name": "OneTime",
+        "price": 80000,
+        "imgName": "GreyG.JPG"
+
+    },
+
+      {
+          "id": 2,
+          "name": "Monthly",
+          "price": 200000,
+          "imgName": "GoldS.JPG"
+      }
+
+    ]
+  }
